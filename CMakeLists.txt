@@ -20,7 +20,7 @@ SET(LZ_EXPORTS
 	lib/dll/liblz4.def
 )
 
-if (LZ4_BUILD_STATIC
+if (LZ4_BUILD_STATIC)
 	add_library(lz4 ${LZ_SRCS})
 else()
 	add_library(lz4 ${LZ_SRCS} ${LZ_EXPORTS})
